@@ -74,7 +74,7 @@ public class Flight_information {
 
 
         label1.setFont(new Font(null, Font.PLAIN, 15));
-        URL url = this.getClass().getResource("/img/1.jpg");
+        URL url = this.getClass().getResource("/resource/img/1.jpg");
         ImageIcon bg = new ImageIcon(url);
         JLabel label = new JLabel(bg);
         label.setSize(frame.getSize());

@@ -34,7 +34,7 @@ public class Login {
     public Login() {
         JFrame frame = new JFrame("Administrator Login");
         frame.setContentPane(panel0);
-        URL url = this.getClass().getResource("/img/flyer.png");
+        URL url = this.getClass().getResource("/resource/img/flyer.png");
         ImageIcon bg = new ImageIcon(url);
         JLabel label = new JLabel(bg);
         label.setSize(800, 500);

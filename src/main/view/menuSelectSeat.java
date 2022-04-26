@@ -45,7 +45,7 @@ public class menuSelectSeat {
     public menuSelectSeat(String orderId) {
 
         frame0 = new JFrame("menuSelectSeat");
-        URL url1 = this.getClass().getResource("/img/seat.png");
+        URL url1 = this.getClass().getResource("/resource/img/seat.png");
         ImageIcon img = new ImageIcon(url1);
         img.setImage(img.getImage().getScaledInstance(400,300, Image.SCALE_DEFAULT));
         Img.setIcon(img);

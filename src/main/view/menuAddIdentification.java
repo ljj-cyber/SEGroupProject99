@@ -29,7 +29,7 @@ public class menuAddIdentification {
 
         //页面生成区域
         frame0 = new JFrame("menuAddIdentification");
-        URL url = this.getClass().getResource("/img/kongjie.png");
+        URL url = this.getClass().getResource("/resource/img/kongjie.png");
         ImageIcon img = new ImageIcon(url);
         img.setImage(img.getImage().getScaledInstance(350,250, Image.SCALE_DEFAULT));
         Img.setIcon(img);

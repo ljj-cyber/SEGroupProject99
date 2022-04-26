@@ -36,10 +36,10 @@ public class menuSelectMeal {
     public menuSelectMeal(String orderId) {
         //生成页面区域
         frame0 = new JFrame("menuSelectMeal");
-        URL url1 = this.getClass().getResource("/img/meal1.png");
-        URL url2 = this.getClass().getResource("/img/meal2.png");
-        URL url3 = this.getClass().getResource("/img/meal3.png");
-        URL url4 = this.getClass().getResource("/img/meal4.png");
+        URL url1 = this.getClass().getResource("/resource/img/meal1.png");
+        URL url2 = this.getClass().getResource("/resource/img/meal2.png");
+        URL url3 = this.getClass().getResource("/resource/img/meal3.png");
+        URL url4 = this.getClass().getResource("/resource/img/meal4.png");
         ImageIcon img1 = new ImageIcon(url1);
         img1.setImage(img1.getImage().getScaledInstance(250,150, Image.SCALE_DEFAULT));
 

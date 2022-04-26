@@ -2,12 +2,11 @@ package main.controller;
 
 
 import java.io.*;
-import java.net.URL;
 
 /**
  * IO operations
- * @author Lingsong Feng
- * @version 5.3
+ * @author Demiao Li
+ * @version 1.0
  */
 public class IO {
 
@@ -18,9 +17,9 @@ public class IO {
      * @throws IOException
      */
     protected static String read(String fileName) throws IOException {
-        System.out.println(IO.class.getResourceAsStream("/Data/"+fileName));
+        System.out.println(IO.class.getResourceAsStream("/src/resource/data/"+fileName));
         try (
-                BufferedReader br = new BufferedReader(new InputStreamReader(IO.class.getResourceAsStream("/Data/"+fileName)))
+                BufferedReader br = new BufferedReader(new InputStreamReader(IO.class.getResourceAsStream("/src/resource/data/"+fileName)))
         ) {
             StringBuilder sb = new StringBuilder();
             String temp = "";
