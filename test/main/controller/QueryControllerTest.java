@@ -3,7 +3,11 @@ package test.main.controller;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+/**
+ *  The class tests the tool methods of query.
+ *  @Author Jingkun Yue
+ *  @Version 1.0
+ */
 class QueryControllerTest {
     @BeforeEach
     void setUp() {
