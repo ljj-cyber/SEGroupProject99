@@ -1,11 +1,10 @@
-# Maven #
-target/
-
-# IDEA #
-.idea/
-*.iml
-
-# Eclipse #
+.DS_Store
+classes/*
 .settings/
+target/
 .classpath
 .project
+
+*.iml
+.idea/
+work/
