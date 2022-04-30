@@ -34,7 +34,7 @@ public class Query_result {
         frame.setResizable(false);
 
         label1.setFont(new Font(null, Font.PLAIN, 25));
-        URL url1 = this.getClass().getResource("/resource/img/1.jpg");
+        URL url1 = this.getClass().getResource("/img/1.jpg");
         ImageIcon bg = new ImageIcon(url1);
         JLabel label = new JLabel(bg);
         label.setSize(800, 500);

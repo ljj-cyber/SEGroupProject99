@@ -42,7 +42,7 @@ public class Custom_query {
 
         label1.setFont(new Font(null, Font.PLAIN, 25));
 
-        URL url = this.getClass().getResource("/resource/img/fly.png");
+        URL url = this.getClass().getResource("/img/fly.png");
         ImageIcon bg = new ImageIcon(url);
         JLabel label = new JLabel(bg);
         label.setSize(800, 500);

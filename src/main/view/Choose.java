@@ -43,7 +43,7 @@ public class Choose {
         }
         JFrame frame = new JFrame("Welcome");
         frame.setContentPane(panel0);
-        URL url = this.getClass().getResource("/resource/img/flyer.png");
+        URL url = this.getClass().getResource("/img/flyer.png");
         ImageIcon bg = new ImageIcon(url);
         JLabel label = new JLabel(bg);
         label.setSize(800, 500);
