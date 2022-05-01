@@ -1,7 +1,11 @@
 package main.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import main.model.Order;
+
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * IO operations
@@ -16,7 +20,7 @@ public class IO {
      * @return the content of that file
      * @throws IOException
      */
-    protected static String read(String fileName) throws IOException {
+    public static String read(String fileName) throws IOException {
         System.out.println(IO.class);
         System.out.println(IO.class.getResourceAsStream("/data/"+fileName));
         try (
@@ -38,10 +42,23 @@ public class IO {
      * @param str content of file
      * @throws IOException
      */
-    protected static void write(String fileName, String str) throws IOException {
-        File file = new File("/data/" + fileName);
+    public static void write(String fileName, String str) throws IOException {
+        File file = new File("./resource/data/" + fileName);//最后整理提交文件时修改
+        System.out.println(file.getAbsolutePath());
         PrintStream ps = new PrintStream(new FileOutputStream(file));
         ps.println(str);
         ps.close();
     }
+
+    public static void main(String[] args) {
+        ArrayList<Order> orders;
+        try {
+            orders= (ArrayList<Order>) JSON.parseArray(IO.read("Order.json"),Order.class);
+            orders.get(0).setStatus(2);
+            IO.write("Order.json", JSON.toJSONString(orders,true));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

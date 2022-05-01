@@ -88,12 +88,13 @@ public class DataManage {
     }
 
     public void commit() throws IOException {
-        IO.write("Passenger.json", JSON.toJSONString(passengers));
-        IO.write("Order.json", JSON.toJSONString(orders));
-        IO.write("Payment.json", JSON.toJSONString(payments));
-        IO.write("Meal.json", JSON.toJSONString(meals));
-        IO.write("Flight.json", JSON.toJSONString(flights));
-        IO.write("Baggage.json", JSON.toJSONString(baggages));
-        IO.write("Administrator.json", JSON.toJSONString(administrators));
+        System.out.println(JSON.toJSONString(orders,true));
+        IO.write("Passenger.json", JSON.toJSONString(passengers,true));
+        IO.write("Order.json", JSON.toJSONString(orders,true));
+        IO.write("Payment.json", JSON.toJSONString(payments,true));
+        IO.write("Meal.json", JSON.toJSONString(meals,true));
+        IO.write("Flight.json", JSON.toJSONString(flights,true));
+        IO.write("Baggage.json", JSON.toJSONString(baggages,true));
+        IO.write("Administrator.json", JSON.toJSONString(administrators,true));
     }
 }
