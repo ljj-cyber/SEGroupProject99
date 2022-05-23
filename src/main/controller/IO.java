@@ -1,11 +1,7 @@
 package main.controller;
 
 
-import com.alibaba.fastjson.JSON;
-import main.model.Order;
-
 import java.io.*;
-import java.util.ArrayList;
 
 /**
  * IO operations
@@ -49,7 +45,7 @@ public class IO {
         ps.println(str);
         ps.close();
     }
-
+    /*
     public static void main(String[] args) {
         ArrayList<Order> orders;
         try {
@@ -60,5 +56,5 @@ public class IO {
             e.printStackTrace();
         }
     }
-
+    */
 }

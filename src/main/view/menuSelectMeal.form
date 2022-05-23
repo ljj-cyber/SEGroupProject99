@@ -87,6 +87,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <font size="14"/>
                       <text value="Low-Fat"/>
                     </properties>
                   </component>
@@ -128,6 +129,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <font size="14"/>
                       <text value="Vegetarian"/>
                     </properties>
                   </component>
@@ -169,6 +171,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <font size="14"/>
                       <text value="Halal"/>
                     </properties>
                   </component>
@@ -210,6 +213,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <font size="14"/>
                       <text value="Standard"/>
                     </properties>
                   </component>
@@ -267,6 +271,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <font size="14"/>
                       <text value="Need for extra meal"/>
                     </properties>
                   </component>

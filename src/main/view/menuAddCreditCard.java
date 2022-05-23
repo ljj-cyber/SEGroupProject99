@@ -1,7 +1,5 @@
 package main.view;
 import main.controller.ChoiceController;
-import main.controller.JudgeController;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,7 +20,7 @@ public class menuAddCreditCard {
     private JPanel panelMid;
     private JTextField textField1;
     private ChoiceController choiceController = new ChoiceController();
-    private JudgeController judgeController = new JudgeController();
+
 
     public menuAddCreditCard(String orderId) {
         //页面生成区域
@@ -40,21 +38,12 @@ public class menuAddCreditCard {
             public void actionPerformed(ActionEvent e) {
                 System.out.println("next");
                 //跳转到信息展示页面,得判断信用卡是否存在
-                if(judgeController.isCorrectCardNum(textField1.getText())){
-                    try {
-                        double temp = choiceController.pay(orderId,textField1.getText());
-                        JOptionPane.showMessageDialog(null,
-                                "You have paid $"+temp);
-                        new menuShowInfo(orderId);
-                        frame0.dispose();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                }
-                else{
-                    JOptionPane.showMessageDialog(null,
-                            "Invalid card number! Please input again!",
-                            "Error",JOptionPane.ERROR_MESSAGE);
+                try {
+                    choiceController.pay(orderId,textField1.getText());
+                    new menuShowInfo(orderId);
+                    frame0.dispose();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
             }
         });

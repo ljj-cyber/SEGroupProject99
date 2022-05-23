@@ -76,7 +76,10 @@ public class menuPrint {
         buttonPrint.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Print successfully");
+                JOptionPane.showMessageDialog(null,"Print successfully!","Success",JOptionPane.PLAIN_MESSAGE);
+                //System.out.println("Print successfully");
+                frame0.dispose();
+                new feed_back();
             }
         });
     }
